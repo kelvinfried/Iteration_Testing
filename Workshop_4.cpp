@@ -2,7 +2,9 @@
 
 int main()
 {
-	/*//Print Hello world 5 times
+	/*
+	//Step 1
+	//Print Hello world 5 times
 	for( int x = 0; x < 5; x++ )	//For loop should iterate 5 times; From 0 - 4
 	{
 		std::cout<< "Hello world" << std::endl;	//Output statement
@@ -31,13 +33,21 @@ int main()
 	for( int x = 4; x > -1; x-- )
 	{
 		std::cout<< ( x + 1 ) << ":Hello world" << std::endl;
-	}*/
+	}
 	
 	//Loop that counts down from 20 to 0 in twos
-	for( int x = 20; x > -2; x-=2 )
+	for( int x = 20; x > -2; x -= 2 )
 	{
 		std::cout<< x << std::endl;
 	}
+	
+	//loop that doubles each iteration
+	for( int x = 1; x < 1500; x *= 2 )	//Accidentally started it at 0 so it would not shift
+	{
+		std::cout<< x << std::endl;
+	}*/
+	
+	//Step 2
 	
 	return 0;
 }
