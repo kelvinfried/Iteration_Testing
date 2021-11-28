@@ -25,5 +25,13 @@ int main()
 		std::cout<< x << ":Hello world" << std::endl;
 	}
 	
+	std::cout<< "" << std::endl;
+	
+	//Now that I have the general Idea down I will do the same using the iteartion without changing the for body's code
+	for( int x = 4; x > -1; x-- )
+	{
+		std::cout<< ( x + 1 ) << ":Hello world" << std::endl;
+	}
+	
 	return 0;
 }
