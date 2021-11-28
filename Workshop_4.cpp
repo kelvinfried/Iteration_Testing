@@ -5,32 +5,45 @@
 //Create a basic player class
 class Player 
 {
-	std::string Name;
-	int Score;
-	int xPosition;
-	
-	
-	Player()
-	{
-		Name = "Default Player Name";
-		Score = 0;
-		xPosition = 0;
-	}
+	public:
+		std::string Name;
+		int Score;
+		int xPosition;
+		
+		
+		Player()
+		{
+			Name = "Default Player Name";
+			Score = 0;
+			xPosition = 0;
+		}
 };
 
 class Game
 {
-	int Time_remaining;
-	int Current_level;
-	int AI_diff;
-	Player Players[ PLAYER_ARRAY_SIZE ]
-	
-	Game()
-	{
-		Time_remaining = 0;
-		Current_level = 0;
-		AI_diff = 0;
-	}
+	public:
+		int Time_remaining;
+		int Current_level;
+		int AI_diff;
+		Player Players[ PLAYER_ARRAY_SIZE ]
+		
+		Game()
+		{
+			Time_remaining = 0;
+			Current_level = 0;
+			AI_diff = 0;
+			
+			for( int x = 0; x > PLAYER_ARRAY_SIZE; x++ )
+			{
+				if( x > PLAYER_ARRAY_SIZE / 2 )		//Position
+				{
+				}
+				
+				else	//Team 2
+				{
+				}
+			}
+		}
 };
 
 int main()
