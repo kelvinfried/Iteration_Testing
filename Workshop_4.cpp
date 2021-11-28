@@ -48,6 +48,7 @@ int main()
 	}*/
 	
 	//Step 2
+	//Loop that loops 5 times, with an index vairable b counting down from 0-4; Leaving it empty for now
 	
 	return 0;
 }
