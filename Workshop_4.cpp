@@ -2,7 +2,7 @@
 
 int main()
 {
-	//Print Hello world 5 times
+	/*//Print Hello world 5 times
 	for( int x = 0; x < 5; x++ )	//For loop should iterate 5 times; From 0 - 4
 	{
 		std::cout<< "Hello world" << std::endl;	//Output statement
@@ -31,7 +31,7 @@ int main()
 	for( int x = 4; x > -1; x-- )
 	{
 		std::cout<< ( x + 1 ) << ":Hello world" << std::endl;
-	}
+	}*/
 	
 	//Loop that counts down from 20 to 0 in twos
 	for( int x = 20; x > 0; x-=2 )
