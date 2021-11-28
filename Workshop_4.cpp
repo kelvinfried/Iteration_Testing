@@ -51,6 +51,7 @@ class Game
 		}
 };
 
+
 int main()
 {
 	/*
