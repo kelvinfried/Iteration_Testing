@@ -34,7 +34,7 @@ int main()
 	}*/
 	
 	//Loop that counts down from 20 to 0 in twos
-	for( int x = 20; x > 0; x-=2 )
+	for( int x = 20; x > -2; x-=2 )
 	{
 		std::cout<< x << std::endl;
 	}
