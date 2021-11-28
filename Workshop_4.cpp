@@ -131,7 +131,16 @@ int main()
 	}*/
 	
 	//Step 4
-
+		//2D Array that is 3x3 in size
+	const int THREE = 3;
+	
+	int Array[ THREE ][ THREE ] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+	
+	//Output
+	for( int x = 0; x < THREE; x++ )
+	{
+		std::cout<< "The " << x << " array element is: " << Array[ x ] << std::endl;
+	}
 	
 	return 0;
 }
