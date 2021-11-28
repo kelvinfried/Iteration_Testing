@@ -142,5 +142,24 @@ int main()
 		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
+	//Iterative array build up.
+	int counter = 0;
+	
+	for( int x = 0; x < THREE; x++ )
+	{
+		for( int y = 0; y < THREE; y++ )
+		{
+			counter ++;
+			
+			Array[ x ][ y ] = counter;
+		}
+	}
+	
+	//Output
+	for( int x = 0; x < THREE; x++ )
+	{
+		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
+	}
+	
 	return 0;
 }
