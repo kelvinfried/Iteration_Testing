@@ -141,10 +141,12 @@ int main()
 	//Output
 	for( int x = 0; x < THREE; x++ )
 	{
-		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
+		//std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
 	std::cout<< "" << std::endl;
+	
+	
 	
 	//Iterative array build up.
 	int Array_1[ ARRAY_WIDTH ][ ARRAY_HEIGHT ];
@@ -159,6 +161,8 @@ int main()
 			std::cout<< counter << std::endl;
 			
 			Array_1[ x ][ y ] = counter;
+			
+			//std::cout<< "Array value is " << Array_1[ x ][ y ] <<std::endl;
 		}
 	}
 	
@@ -167,10 +171,10 @@ int main()
 	{
 		for( int y = 0; y < ARRAY_WIDTH; y++ )
 		{
-			std::cout<< "Current X value is " << x << " Current Y value is " << y << std::endl;
+			std::cout<< "Current X value is " << x << " Current Y value is " << y << " with a current array value of: " << Array_1[ x ][ y ] << std::endl;
 		}
 		//std::cout<< "The " << x << " array element is: " << *( Array_1[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
-		std::cout<< "" << std::endl;	//Breaks the line every 
+		//std::cout<< "" << std::endl;	//Breaks the line every 
 	}
 	
 	return 0;
