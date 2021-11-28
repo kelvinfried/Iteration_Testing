@@ -1,5 +1,27 @@
 #include <iostream>
 
+//Create a basic player class
+class Player 
+{
+	int xPosition;
+	
+	Player()
+	{
+		xPosition = 0;
+	}
+};
+
+class Game
+{
+	int Time_remaining;
+	int Current_level;
+	int AI_diff;
+	
+	Game()
+	{
+	}
+};
+
 int main()
 {
 	/*
@@ -67,6 +89,8 @@ int main()
 	}*/
 	
 	//Step 3
+		//Create a basic player class
+		//Creat a game class
 	
 	return 0;
 }
