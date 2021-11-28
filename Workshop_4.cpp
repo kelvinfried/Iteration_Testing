@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define int PLAYER_ARRAY_SIZE = 2
+#define PLAYER_ARRAY_SIZE 2
 
 //Create a basic player class
 class Player 
@@ -25,7 +25,7 @@ class Game
 		int Time_remaining;
 		int Current_level;
 		int AI_diff;
-		Player Players[ PLAYER_ARRAY_SIZE ]
+		Player Players[ PLAYER_ARRAY_SIZE ];
 		
 		Game()
 		{
@@ -33,14 +33,18 @@ class Game
 			Current_level = 0;
 			AI_diff = 0;
 			
-			for( int x = 0; x > PLAYER_ARRAY_SIZE; x++ )
+			for( int x = 0; x < PLAYER_ARRAY_SIZE; x++ )
 			{
-				if( x > PLAYER_ARRAY_SIZE / 2 )		//Position
+				if( x < ( PLAYER_ARRAY_SIZE / 2 ) )		//if less than half of x; Position -1
 				{
+					std::cout<< x << " has a value of -1" << std::endl;
+					Players[ x ].xPosition = -1;
 				}
 				
-				else	//Team 2
+				else	//Else; Position 1
 				{
+					std::cout<< x << " has a value of 1" << std::endl;
+					Players[ x ].xPosition = 1;
 				}
 			}
 		}
@@ -115,6 +119,12 @@ int main()
 	//Step 3
 		//Create a basic player class
 		//Creat a game class
+	
+	//Checking my code is working well;
+	Game Game_Test;
+	//std::cout<< Game_Test.Players[ 0 ].xPosition << " Is the value given to the first value." << std::endl;
+	
+
 	
 	return 0;
 }
