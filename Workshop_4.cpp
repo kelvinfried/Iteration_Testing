@@ -8,5 +8,22 @@ int main()
 		std::cout<< "Hello world" << std::endl;	//Output statement
 	}
 	
+	std::cout<< "" << std::endl;
+	
+	//Loop to print 1 to 5, by refering to the iteration index.
+	for( int x = 0; x < 5; x++ )
+	{
+		std::cout<< ( x + 1 ) << ":Hello world" << std::endl;
+	}
+	
+	std::cout<< "" << std::endl;
+	
+	//Loop to print from 5 to 1;
+	for( int x = 5; x > 0; x-- )
+	{
+		//std::cout<< ( x + 1 ) << ":Hello world" << std::endl;	//Made a mistake here, need to ensure I do not add one.
+		std::cout<< x << ":Hello world" << std::endl;
+	}
+	
 	return 0;
 }
