@@ -47,6 +47,7 @@ int main()
 		std::cout<< x << std::endl;
 	}*/
 	
+	/*
 	//Step 2
 	//Loop that loops 5 times, with an index vairable b counting down from 4-0; Leaving it empty for now
 	int counter = 0;
@@ -63,7 +64,9 @@ int main()
 			
 			counter += 1;
 		}
-	}
+	}*/
+	
+	//Step 3
 	
 	return 0;
 }
