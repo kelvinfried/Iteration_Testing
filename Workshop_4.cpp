@@ -1,6 +1,7 @@
 #include <iostream>
 
 #define PLAYER_ARRAY_SIZE 2
+//#define PLAYER_ARRAY_SIZE 50	//Tiral to see how it runs	//It runs as expected
 
 //Create a basic player class
 class Player 
@@ -37,13 +38,13 @@ class Game
 			{
 				if( x < ( PLAYER_ARRAY_SIZE / 2 ) )		//if less than half of x; Position -1
 				{
-					std::cout<< x << " has a value of -1" << std::endl;
+					//std::cout<< x << " has a value of -1" << std::endl;
 					Players[ x ].xPosition = -1;
 				}
 				
 				else	//Else; Position 1
 				{
-					std::cout<< x << " has a value of 1" << std::endl;
+					//std::cout<< x << " has a value of 1" << std::endl;
 					Players[ x ].xPosition = 1;
 				}
 			}
@@ -123,8 +124,10 @@ int main()
 	//Checking my code is working well;
 	Game Game_Test;
 	//std::cout<< Game_Test.Players[ 0 ].xPosition << " Is the value given to the first value." << std::endl;
-	
+	for( int x = 0; x < PLAYER_ARRAY_SIZE; x++ )
+	{
+		std::cout<< "The " << x << "th player has a xPosition of " << Game_Test.Players[ x ].xPosition << std::endl;
+	}
 
-	
 	return 0;
 }
