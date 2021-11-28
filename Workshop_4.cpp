@@ -139,7 +139,7 @@ int main()
 	//Output
 	for( int x = 0; x < THREE; x++ )
 	{
-		std::cout<< "The " << x << " array element is: " << Array[ x ] << std::endl;
+		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
 	return 0;
