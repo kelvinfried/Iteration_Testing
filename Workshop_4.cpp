@@ -167,9 +167,9 @@ int main()
 	}
 	
 	//Output
-	for( int x = 0; x < ARRAY_HEIGHT; x++ )
+	for( int x = 0; x < ARRAY_WIDTH; x++ )
 	{
-		for( int y = 0; y < ARRAY_WIDTH; y++ )
+		for( int y = 0; y < ARRAY_HEIGHT; y++ )
 		{
 			std::cout<< "Current X value is " << x << " Current Y value is " << y << " with a current array value of: " << Array_1[ x ][ y ] << std::endl;
 		}
