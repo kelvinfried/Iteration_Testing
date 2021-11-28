@@ -118,6 +118,7 @@ int main()
 	}*/
 	
 	//Step 3
+	/*
 		//Create a basic player class
 		//Creat a game class
 	
@@ -127,7 +128,10 @@ int main()
 	for( int x = 0; x < PLAYER_ARRAY_SIZE; x++ )
 	{
 		std::cout<< "The " << x << "th player has a xPosition of " << Game_Test.Players[ x ].xPosition << std::endl;
-	}
+	}*/
+	
+	//Step 4
 
+	
 	return 0;
 }
