@@ -54,12 +54,12 @@ int main()
 	for( int b = 4; b > -1; b-- )
 	{
 		//std::cout<< b << std::endl;
-		std::cout<< counter << std::endl;
+		//std::cout<< counter << std::endl;
 		
 		for( int a = 5; a > 0; a-- )	//Now adding in another for loop that repeats 5 times
 		{
 			//std::cout<< a << std::endl;	//Loop testing
-			std::cout<< "Hello world" << std::endl;
+			std::cout<< ( counter + 1 ) << ":Hello world" << std::endl;
 			
 			counter += 1;
 		}
