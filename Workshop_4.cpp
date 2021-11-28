@@ -49,14 +49,19 @@ int main()
 	
 	//Step 2
 	//Loop that loops 5 times, with an index vairable b counting down from 4-0; Leaving it empty for now
+	int counter = 0;
+	
 	for( int b = 4; b > -1; b-- )
 	{
 		//std::cout<< b << std::endl;
+		std::cout<< counter << std::endl;
 		
 		for( int a = 5; a > 0; a-- )	//Now adding in another for loop that repeats 5 times
 		{
 			//std::cout<< a << std::endl;	//Loop testing
-
+			std::cout<< "Hello world" << std::endl;
+			
+			counter += 1;
 		}
 	}
 	
