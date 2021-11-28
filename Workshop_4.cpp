@@ -133,6 +133,8 @@ int main()
 	//Step 4
 		//2D Array that is 3x3 in size
 	const int THREE = 3;
+	constexpr int ARRAY_WIDTH = 5;
+	constexpr int ARRAY_HEIGHT = 5;
 	
 	int Array[ THREE ][ THREE ] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 	
@@ -142,23 +144,27 @@ int main()
 		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
+	std::cout<< "" << std::endl;
+	
 	//Iterative array build up.
+	int Array_1[ ARRAY_WIDTH ][ ARRAY_HEIGHT ];
+	
 	int counter = 0;
 	
-	for( int x = 0; x < THREE; x++ )
+	for( int x = 0; x < ARRAY_WIDTH; x++ )
 	{
-		for( int y = 0; y < THREE; y++ )
+		for( int y = 0; y < ARRAY_HEIGHT; y++ )
 		{
 			counter ++;
 			
-			Array[ x ][ y ] = counter;
+			Array_1[ x ][ y ] = counter;
 		}
 	}
 	
 	//Output
-	for( int x = 0; x < THREE; x++ )
+	for( int x = 0; x < ARRAY_HEIGHT; x++ )
 	{
-		std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
+		std::cout<< "The " << x << " array element is: " << *( Array_1[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
 	return 0;
