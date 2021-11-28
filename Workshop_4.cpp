@@ -133,8 +133,8 @@ int main()
 	//Step 4
 		//2D Array that is 3x3 in size
 	const int THREE = 3;
-	constexpr int ARRAY_WIDTH = 2;
-	constexpr int ARRAY_HEIGHT = 10;
+	constexpr int ARRAY_WIDTH = 10;
+	constexpr int ARRAY_HEIGHT = 2;
 	
 	int Array[ THREE ][ THREE ] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 	
@@ -144,7 +144,7 @@ int main()
 		//std::cout<< "The " << x << " array element is: " << *( Array[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
 	}
 	
-	std::cout<< "" << std::endl;
+	//std::cout<< "" << std::endl;
 	
 	
 	
@@ -158,11 +158,11 @@ int main()
 		for( int y = 0; y < ARRAY_HEIGHT; y++ )
 		{
 			counter ++;
-			std::cout<< counter << std::endl;
+			//std::cout<< counter << std::endl;
 			
 			Array_1[ x ][ y ] = counter;
 			
-			//std::cout<< "Array value is " << Array_1[ x ][ y ] <<std::endl;
+			std::cout<< "X value " << x << " Y value " << y << " Array value is " << Array_1[ x ][ y ] <<std::endl;
 		}
 	}
 	
