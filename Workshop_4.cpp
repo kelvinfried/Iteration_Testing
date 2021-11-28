@@ -33,5 +33,11 @@ int main()
 		std::cout<< ( x + 1 ) << ":Hello world" << std::endl;
 	}
 	
+	//Loop that counts down from 20 to 0 in twos
+	for( int x = 20; x > 0; x-=2 )
+	{
+		std::cout<< x << std::endl;
+	}
+	
 	return 0;
 }
