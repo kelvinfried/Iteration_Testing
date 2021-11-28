@@ -133,8 +133,8 @@ int main()
 	//Step 4
 		//2D Array that is 3x3 in size
 	const int THREE = 3;
-	constexpr int ARRAY_WIDTH = 5;
-	constexpr int ARRAY_HEIGHT = 5;
+	constexpr int ARRAY_WIDTH = 2;
+	constexpr int ARRAY_HEIGHT = 10;
 	
 	int Array[ THREE ][ THREE ] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 	
@@ -156,6 +156,7 @@ int main()
 		for( int y = 0; y < ARRAY_HEIGHT; y++ )
 		{
 			counter ++;
+			std::cout<< counter << std::endl;
 			
 			Array_1[ x ][ y ] = counter;
 		}
@@ -164,7 +165,12 @@ int main()
 	//Output
 	for( int x = 0; x < ARRAY_HEIGHT; x++ )
 	{
-		std::cout<< "The " << x << " array element is: " << *( Array_1[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
+		for( int y = 0; y < ARRAY_WIDTH; y++ )
+		{
+			std::cout<< "Current X value is " << x << " Current Y value is " << y << std::endl;
+		}
+		//std::cout<< "The " << x << " array element is: " << *( Array_1[ x ] ) << std::endl;	//Had to dereferance the array pointers to get the value
+		std::cout<< "" << std::endl;	//Breaks the line every 
 	}
 	
 	return 0;
