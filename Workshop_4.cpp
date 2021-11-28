@@ -48,10 +48,16 @@ int main()
 	}*/
 	
 	//Step 2
-	//Loop that loops 5 times, with an index vairable b counting down from 0-4; Leaving it empty for now
-	for( int b = 4; b > 0; b-- )
+	//Loop that loops 5 times, with an index vairable b counting down from 4-0; Leaving it empty for now
+	for( int b = 4; b > -1; b-- )
 	{
-		;
+		//std::cout<< b << std::endl;
+		
+		for( int a = 5; a > 0; a-- )	//Now adding in another for loop that repeats 5 times
+		{
+			//std::cout<< a << std::endl;	//Loop testing
+
+		}
 	}
 	
 	return 0;
